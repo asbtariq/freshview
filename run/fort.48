@@ -1,0 +1,106 @@
+ loop = -1  is type = 0 0. 4. 28. 2.03 0. 0. 0. 0. 0.
+ loop = -1  is type = 1 0. 26. 1.18 0.34 0. 0. 0. 0. 0.
+ loop = -1  is type = 1 0. -42. 0.62 0. 24. 0.885 0. 0. 0.
+ WOUT,ITER,FALLOC = F 0 F
+ 0. +NUMCC: 1 1
+ 0. +CCSET: 1 1 1
+ 0. -NUMCC: 0 0
+ 1. +NUMCC: 0 0
+ 1. -NUMCC: 1 1
+ 1. -CCSET: 1 1 1
+ 2. +NUMCC: 1 1
+ 2. +CCSET: 1 1 1
+ 2. -NUMCC: 0 0
+ 3. +NUMCC: 0 0
+ 3. -NUMCC: 1 1
+ 3. -CCSET: 1 1 1
+ 4. +NUMCC: 1 1
+ 4. +CCSET: 1 1 1
+ 4. -NUMCC: 0 0
+ 5. +NUMCC: 0 0
+ 5. -NUMCC: 1 1
+ 5. -CCSET: 1 1 1
+ 6. +NUMCC: 1 1
+ 6. +CCSET: 1 1 1
+ 6. -NUMCC: 0 0
+ 7. +NUMCC: 0 0
+ 7. -NUMCC: 1 1
+ 7. -CCSET: 1 1 1
+ 8. +NUMCC: 1 1
+ 8. +CCSET: 1 1 1
+ 8. -NUMCC: 0 0
+ 9. +NUMCC: 0 0
+ 9. -NUMCC: 1 1
+ 9. -CCSET: 1 1 1
+ 10. +NUMCC: 1 1
+ 10. +CCSET: 1 1 1
+ 10. -NUMCC: 0 0
+ 11. +NUMCC: 0 0
+ 11. -NUMCC: 1 1
+ 11. -CCSET: 1 1 1
+ 12. +NUMCC: 1 1
+ 12. +CCSET: 1 1 1
+ 12. -NUMCC: 0 0
+ 13. +NUMCC: 0 0
+ 13. -NUMCC: 1 1
+ 13. -CCSET: 1 1 1
+ 14. +NUMCC: 1 1
+ 14. +CCSET: 1 1 1
+ 14. -NUMCC: 0 0
+ 15. +NUMCC: 0 0
+ 15. -NUMCC: 1 1
+ 15. -CCSET: 1 1 1
+ 16. +NUMCC: 1 1
+ 16. +CCSET: 1 1 1
+ 16. -NUMCC: 0 0
+ 17. +NUMCC: 0 0
+ 17. -NUMCC: 1 1
+ 17. -CCSET: 1 1 1
+ 18. +NUMCC: 1 1
+ 18. +CCSET: 1 1 1
+ 18. -NUMCC: 0 0
+ 19. +NUMCC: 0 0
+ 19. -NUMCC: 1 1
+ 19. -CCSET: 1 1 1
+ 20. +NUMCC: 1 1
+ 20. +CCSET: 1 1 1
+ 20. -NUMCC: 0 0
+ 21. +NUMCC: 0 0
+ 21. -NUMCC: 1 1
+ 21. -CCSET: 1 1 1
+ 22. +NUMCC: 1 1
+ 22. +CCSET: 1 1 1
+ 22. -NUMCC: 0 0
+ 23. +NUMCC: 0 0
+ 23. -NUMCC: 1 1
+ 23. -CCSET: 1 1 1
+ 24. +NUMCC: 1 1
+ 24. +CCSET: 1 1 1
+ 24. -NUMCC: 0 0
+ 25. +NUMCC: 0 0
+ 25. -NUMCC: 1 1
+ 25. -CCSET: 1 1 1
+ 26. +NUMCC: 1 1
+ 26. +CCSET: 1 1 1
+ 26. -NUMCC: 0 0
+ 27. +NUMCC: 0 0
+ 27. -NUMCC: 1 1
+ 27. -CCSET: 1 1 1
+ 28. +NUMCC: 1 1
+ 28. +CCSET: 1 1 1
+ 28. -NUMCC: 0 0
+ 29. +NUMCC: 0 0
+ 29. -NUMCC: 1 1
+ 29. -CCSET: 1 1 1
+ 30. +NUMCC: 1 1
+ 30. +CCSET: 1 1 1
+ 30. -NUMCC: 0 0
+ 31. +NUMCC: 0 0
+ 31. -NUMCC: 1 1
+ 31. -CCSET: 1 1 1
+ 32. +NUMCC: 1 1
+ 32. +CCSET: 1 1 1
+ 32. -NUMCC: 0 0
+ 33. +NUMCC: 0 0
+ 33. -NUMCC: 1 1
+ 33. -CCSET: 1 1 1

@@ -1,0 +1,68 @@
+ &PARTITION NAMEP = 'alpha   ', MASSP = 4.0026, ZP = 2., 
+ NEX = 1, PWF = T, NAMET = '28Si    ', MASST = 27.9769, 
+ ZT = 14., QVAL = 0., READSTATES = 0, 
+ /
+ &STATES JP = 0., COPYP = 0, PTYP = 1, BANDP = 1, EP = 0., 
+ KKP = 0., TP = 0., CPOT = 1, JT = 0., COPYT = 0, PTYT = 1, 
+ BANDT = 1, ET = 0., KKT = 0., TT = 0., FEXCH = F, IGNORE = F, 
+ INFAM = 0, OUTFAM = 0, 
+ /
+ &partition /
+ &POTL KPI = 1, TYPEI = 0, ITT = F, NOSUB = F, SHAPEI = 0, 
+ P = 0., 4., 28., 2.03, 5*0., LSHAPEI = 0, JL = ' ', XLVARY = 0., 
+ ALVARY = 0., 
+ /
+ &POTL KPI = 1, TYPEI = 1, ITT = F, NOSUB = F, SHAPEI = 0, 
+ P = 0., 26., 1.18, 0.34, 5*0., LSHAPEI = 0, JL = ' ', XLVARY = 0., 
+ ALVARY = 0., 
+ /
+ &POTL KPI = 1, TYPEI = 1, ITT = F, NOSUB = F, SHAPEI = 2, 
+ P = 0., -42., 0.62, 0., 24., 0.885, 3*0., LSHAPEI = 0, 
+ JL = ' ', XLVARY = 0., ALVARY = 0., 
+ /
+ &potl /
+ &overlap /
+ &coupling /
+ 'End of couplings'
+
+
+ parameters:    mxx    mxp  mxpex  maxit maxcpl maxnnu 
+   required:      1      1      2      0      1     30
+
+ parameters:   maxn  mint  maxnln maxnlo    msp  lmax1  mpair
+   required:    752    751    151      4      1     70      1
+
+ parameters:     mloc   mclist   maxqrn
+   required:        3        5        1
+
+
+ parameters:     mloc   mclist   maxqrn
+   required:        3        5        1
+
+
+alpha+28Si elastic Scattering at 28 MeV                                         
+NAMELIST
+ &FRESCO HCM = 0.04, RMATCH = 30., RINTP = 0.2, HNL = 0.04, 
+ RNL = 0.12, CENTRE = 0., HNN = 0.2, RNN = 0., RMIN = 0., 
+ RSP = 30., RASYM = 0., ACCRCY = 0.0010000000474974513, 
+ SWITCH = 0., AJSWTCH = 0., SINJMAX = 0., PLANE = 0, JTMIN = 0., 
+ JTMAX = 50., ABSEND = 0., DRY = F, RELA = ' ', NEARFA = 1, 
+ JUMP = 6*0, JBORD = 7*0., PSET = 0, JSET = 0, JLEAST = 0., 
+ KQMAX = 0, PP = 0, THMIN = 5., THMAX = 178., THINC = 1.5, 
+ KOORDS = 0, CUTL = -1.600000023841858, CUTR = 0., CUTC = 0., 
+ COMPLEXBINS = F, IPS = 0., IT0 = 0, ITER = 0, FATAL = F, 
+ IBLOCK = 1, PADE = 0, PSIREN = F, ISO = ' ', NNU = 30, 
+ MAXL = 56, MINL = 0, MTMIN = 6, EPC = 1., ERANGE = 0., 
+ DK = 0., NOSOL = F, NRBASES = 0, NRBMIN = 0, PRALPHA = F, 
+ PCON = 0, RMATR = 30., EBETA = 2*0., MEIGS = 0, BUTTLE = 0, 
+ WEAK = 0.0010000000474974513, LLMAX = -1, EXPAND = 1.2000000476837158, 
+ 1., 0., 4., 0.4000000059604645, 2., 5*1., HKTARG = 0.20000000298023224, 
+ CHANS = 1, LISTCC = 0, TRENEG = 3, CDETR = 0, SMATS = 1, 
+ XSTABL = 3, NLPL = 0, WAVES = 0, LAMPL = -1, VEFF = 0, 
+ KFUS = 0, WDISK = 0, BPM = 1, MELFIL = 0, CDCC = 0, NFUS = 0, 
+ NPARAMETERS = 0, SMALLCHAN = 0., SMALLCOUP = 0., NUMNODE = 0, 
+ SUMFORM = 2, MAXCOUP = 3*0, OMPFORM = 0, INH = 0, TMP = '                                                                      ', 
+ MASFIL = '/netopt/PHS1IT/lib/m88lrb                                             ', 
+ UNITMASS = 1., FINEC = 137.03599, PEL = 1, EXL = 1, LAB = 1, 
+ LIN = 1, LEX = 1, ELAB = 28., 4*0., NLAB = 4*0, 
+ /
