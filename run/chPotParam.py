@@ -17,7 +17,7 @@ def chPotParam(param,newVal,inF):
                 print 'Found WS'
                 print 'WS param line is: '+line
                 print 'V0 is: '+line[8:16]
-                line = line[:8]+' 24.00  '+line[16:]
+                line = line[:8]+newVal+line[16:]
                 print 'After changing'
                 print 'WS param line is: '+line
                 print 'Now V0 is: '+line[8:16]
@@ -31,4 +31,12 @@ def chPotParam(param,newVal,inF):
     f.writelines(newfiletext)
         
 
-chPotParam('V0',24.0,'../inp/test.inp')
+import sys
+potParam = sys.argv[1]
+#newValue packed as a string 8 chars long
+newValue = ' '+sys.argv[2]+'      '
+newValue = newValue[:8]
+inpFile  = sys.argv[3]
+chPotParam(potParam,newValue,inpFile)
+#chPotParam('V0',24.0,'../inp/test.inp')
+
