@@ -1,6 +1,12 @@
+from potTypePosn import potType
+from potTypePosn import potPosn
+
 def chPotParam(param,newVal,inF):
     print 'Changing '+param+' to '+str(newVal)+' in '+inF
     print 'First, we have to find '+param+' in '+inF
+    pInd = str(potType[param])
+    pStart = potPosn[param][0]
+    pEnd   = potPosn[param][1]
     filetext = open(inF).readlines()
     newfiletext = filetext[:9]
     # leave first eight cards(lines)
@@ -10,18 +16,23 @@ def chPotParam(param,newVal,inF):
             potInd = line.split()[:3]
             # take first char only in cases like '2-42.0' i.e. no space betn params
             potInd[2] = potInd[2][:1]
-            if potInd[1] == '0':
-	        print 'Found Coulomb'
-                print 'Coulomb param line is: '+line
-            elif potInd[2] == '0':
-                print 'Found WS'
-                print 'WS param line is: '+line
-                print 'V0 is: '+line[8:16]
-                line = line[:8]+newVal+line[16:]
-                print 'After changing'
-                print 'WS param line is: '+line
-                print 'Now V0 is: '+line[8:16]
-            elif potInd[2] == '2':
+            if param == 'rC':
+                if potInd[1] == '0':
+                    print 'Parameter line is: '+line[:-2]
+                    print param+' is: '+line[pStart:pEnd]+'\n'
+                    line = line[:pStart]+newVal+line[pEnd:]
+                    print 'After changing ...'
+                    print 'Parameter line is: '+line[:-2]
+                    print 'Now '+param+' is: '+line[pStart:pEnd]
+                break
+            elif potInd[2] == pInd:
+                print 'Parameter line is: '+line[:-2]
+                print param+' is: '+line[pStart:pEnd]+'\n'
+                line = line[:pStart]+newVal+line[pEnd:]
+                print 'After changing ...'
+                print 'Parameter line is: '+line[:-2]
+                print 'Now '+param+' is: '+line[pStart:pEnd]
+            elif potInd[2] == pInd:
 	        print 'Found Gaussian'
                 print 'Gaussian param line is: '+line
             newfiletext.append(line)
@@ -32,11 +43,12 @@ def chPotParam(param,newVal,inF):
         
 
 import sys
+
 potParam = sys.argv[1]
 #newValue packed as a string 8 chars long
 newValue = ' '+sys.argv[2]+'      '
 newValue = newValue[:8]
 inpFile  = sys.argv[3]
+
 chPotParam(potParam,newValue,inpFile)
-#chPotParam('V0',24.0,'../inp/test.inp')
 
