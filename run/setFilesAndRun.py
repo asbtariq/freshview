@@ -16,7 +16,7 @@ def datInOut(inStem,runID):
 def runFresco(inF,outF):
     # run fresco
     print 'Running Fresco with input '+inF+' and output '+outF
-    os.system('fresco < '+inF)
+    os.system('fresco < '+inF+' > fresco.stdout')
     # remove lines (beginning) with @ and # and the last line 'END' from the fort.16 output file
     os.system("grep -v '@' fort.16 | grep -v '#' | grep -v 'END' > "+outF)
 
