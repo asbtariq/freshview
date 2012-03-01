@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from potTypePosn import potType
 from potTypePosn import potPosn
 

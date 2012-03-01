@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os,sys,glob
+import os,sys
 
 # for a given 'inStem' and 'runID' creates .dat, .inp and .out filenames
 def datInOut(inStem,runID):
@@ -15,13 +15,13 @@ def datInOut(inStem,runID):
 
 def runFresco(inF,outF):
     # run fresco
-    print 'fresco < '+inF
+    print 'Running Fresco with input '+inF+' and output '+outF
     os.system('fresco < '+inF)
-    # remove lines (beginning) with @ and the last line 'END' from the fort.16 output file
-    os.system("grep -v '@' fort.16 | grep -v 'END' > "+outF)
+    # remove lines (beginning) with @ and # and the last line 'END' from the fort.16 output file
+    os.system("grep -v '@' fort.16 | grep -v '#' | grep -v 'END' > "+outF)
 
-files = datInOut(sys.argv[1],sys.argv[2])
-runFresco(files['inF'],files['outF'])
+#files = datInOut(sys.argv[1],sys.argv[2])
+#runFresco(files['inF'],files['outF'])
 
 
 
