@@ -40,7 +40,7 @@ if __name__ == '__main__':
                 for inpFileToChange in inpFiles:
                     chPotParam(par,newValue,inpFileToChange)
             if runIDnew != '0':
-                runID = runIDnew
+                runId = [runIDnew]
         elif code == 2:
             print 'Thank you!'
             runIdx = 1
