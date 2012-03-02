@@ -8,7 +8,8 @@ def chPotParam(param,newVal,inF):
     print 'First, we have to find '+param+' in '+inF
 
     #newValue packed as a string 8 chars long
-    newVal = ' '+newVal+'      '
+    newVal = float(newVal)
+    newVal = ' '+str(newVal)+'      '
     newVal = newVal[:8]
 
     pInd = str(potType[param])
