@@ -6,9 +6,15 @@ from potTypePosn import potPosn
 def chPotParam(param,newVal,inF):
     print 'Changing '+param+' to '+str(newVal)+' in '+inF
     print 'First, we have to find '+param+' in '+inF
+
+    #newValue packed as a string 8 chars long
+    newVal = ' '+newVal+'      '
+    newVal = newVal[:8]
+
     pInd = str(potType[param])
     pStart = potPosn[param][0]
     pEnd   = potPosn[param][1]
+
     filetext = open(inF).readlines()
     newfiletext = filetext[:9]
     # leave first eight cards(lines)
@@ -26,7 +32,6 @@ def chPotParam(param,newVal,inF):
                     print 'After changing ...'
                     print 'Parameter line is: '+line[:-2]
                     print 'Now '+param+' is: '+line[pStart:pEnd]
-                break
             elif potInd[2] == pInd:
                 print 'Parameter line is: '+line[:-2]
                 print param+' is: '+line[pStart:pEnd]+'\n'
@@ -42,15 +47,13 @@ def chPotParam(param,newVal,inF):
             newfiletext.append(line)
     f=open(inF,'w')
     f.writelines(newfiletext)
-        
 
+'''        
 import sys
 
 potParam = sys.argv[1]
-#newValue packed as a string 8 chars long
-newValue = ' '+sys.argv[2]+'      '
-newValue = newValue[:8]
+newValue = sys.argv[2]
 inpFile  = sys.argv[3]
 
 chPotParam(potParam,newValue,inpFile)
-
+'''
